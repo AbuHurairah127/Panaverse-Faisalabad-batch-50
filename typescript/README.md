@@ -16,13 +16,15 @@
 
 3.  Run the following command to install [typescript](https://www.typescriptlang.org/play) globally:
 
-            `npm install -g typescript`
+                `npm install -g typescript`
 
-    or
+        or
 
-        `npm i -g typescript`
+            `npm i -g typescript`
 
-    The second one is shorthand working of both are same.
+        The second one is shorthand working of both are same.
+
+    **v5.1.6 till (24-jul-2023)**
 
 4.  Install [VS Code](https://code.visualstudio.com/),an IDE (Integrated Development Environment) for writing typescript.
 
@@ -33,7 +35,7 @@
 
 **Note (For windows users): By default the terminal profile in the VS code is set to _powershell_. In window powershell has n't much permissions to run typescript compiler. So kindly shift to command prompt or cmd.**
 
-3.      `npm init`
+3.       `npm init`
 
     or
 
