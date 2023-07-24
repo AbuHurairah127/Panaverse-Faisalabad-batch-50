@@ -31,11 +31,16 @@
 ## Node Project Starter Kit
 
 1. First of all create a new folder or open an empty folder (select name for folder without space) in the VS CODE.
-2. Then open a new terminal and run.
+2. Then open a new terminal. To open terminal you will see a button `terminal` at the top of you VS Code screen click on it and the `new terminal` or press
 
+```shell
+ctrl + `
+```
+
+and run.(**`** key is present just under the **esc** key.)
 **Note (For windows users): By default the terminal profile in the VS code is set to _powershell_. In window powershell has n't much permissions to run typescript compiler. So kindly shift to command prompt or cmd.**
 
-3.       `npm init`
+3.        `npm init`
 
     or
 
