@@ -20,7 +20,7 @@
 
 or
 
-            `npm i -g typescript`
+                `npm i -g typescript`
 
 The second one is shorthand working of both are same.
 
@@ -40,7 +40,7 @@ ctrl + `
 and run.(**`** key is present just under the **esc** key.)
 **Note (For windows users): By default the terminal profile in the VS code is set to _powershell_. In window powershell has n't much permissions to run typescript compiler. So kindly shift to command prompt or cmd.**
 
-3.         `npm init`
+3.          `npm init`
 
     or
 
