@@ -15,12 +15,13 @@ var result3: boolean = num1 == num2;
 // value check and datatype check.
 var result4: boolean = num1 === num2;
 
+//not equal to operator
+var result6: boolean = num1 != num2
+
 //Greater than and equal to operator
 var result5: boolean = num1 >= num2;
 
 //Less than and equal to operator
 var result5: boolean = num1 <= num2;
 
-//not less than operator
-var result6: boolean = num1! < =num2
 
