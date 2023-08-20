@@ -31,7 +31,7 @@ sum2Numbers(30, 90);
 // Now the above given example is of a function that takes two numbers and add them and print them
 //  -------------------------------------------------------------------------------------------------------------------------------------
 
-// Function with return
+// Function with return   
 // Use Case: Now let's say we have to perform sum of two numbers but we want the result outside the function so that we can perform more logic on the result
 // We have to return the value and one function can return only one value or variable
 // We can use the returned value:
