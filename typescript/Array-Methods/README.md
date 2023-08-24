@@ -15,9 +15,12 @@ Yes, the original array is modified by adding elements to the end.
 
 **Example:**
 
-`   const numbers = [1, 2, 3];
+` const numbers = [1, 2, 3];
+
     const returnedValue = numbers.push(4, 5);
+
     // Result: numbers = [1, 2, 3, 4, 5], returnedValue = 5
+
 `
 
 ### `pop` Method
@@ -32,11 +35,12 @@ It returns the removed element.
 Yes, the original array is modified by removing the last element.
 **Example:**
 
-` const numbers = [1, 2, 3];
-const removedElement = numbers.pop();
-// Result: numbers = [1, 2], removedElement = 3
+    ` const numbers = [1, 2, 3];
 
-`
+    const removedElement = numbers.pop();
+
+    // Result: numbers = [1, 2], removedElement = 3
+    `
 
 ### `shift` Method
 
