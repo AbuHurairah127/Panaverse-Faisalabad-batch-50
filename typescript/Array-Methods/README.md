@@ -119,6 +119,132 @@ const sliced = numbers.slice(1, 4);
 // Result: numbers = [1, 2, 3, 4, 5], sliced = [2, 3, 4]
 ```
 
+### `length` Property
+
+**Functionality:**
+The `length` property returns the number of elements in an array.
+
+**Usage:**
+You can access the `length` property of an array to get the total number of elements it contains.
+
+**Example:**
+
+```
+const numbers = [1, 2, 3, 4, 5];
+const count = numbers.length;
+// Result: count = 5
+```
+
+**Changes Original Array**:
+No, accessing the length property does not modify the original array.
+
+### `sort` Method
+
+**Functionality:**
+The `sort` method sorts the elements of an array in place and returns the sorted array.
+
+**Parameters:**
+The `sort` method optionally accepts a compare function that defines the sort order.
+
+**Return Value:**
+It returns the sorted array.
+
+**Changes Original Array:**
+Yes, the original array is modified when using the `sort` method.
+
+**Example:**
+
+```
+const fruits = ["banana", "apple", "cherry"];
+fruits.sort();
+// Result: fruits = ["apple", "banana", "cherry"]
+```
+
+### `reverse` Method
+
+**Functionality:**
+The `reverse` method reverses the order of elements in an array in place and returns the reversed array.
+
+**Return Value:**
+It returns the reversed array.
+
+**Changes Original Array:**
+Yes, the original array is modified when using the `reverse` method.
+
+**Example:**
+
+```
+const numbers = [1, 2, 3, 4, 5];
+numbers.reverse();
+// Result: numbers = [5, 4, 3, 2, 1]
+```
+
+### `find` Method
+
+**Functionality:**
+The `find` method returns the first element in an array that satisfies a given condition.
+
+**Parameters:**
+The `find` method accepts a callback function that tests each element of the array.
+
+**Return Value:**
+It returns the first element that matches the condition, or `undefined` if no element is found.
+
+**Changes Original Array:**
+No, the original array remains unchanged when using the `find` method.
+
+**Example:**
+
+```
+const numbers = [10, 20, 30, 40, 50];
+const target = numbers.find(num => num > 25);
+// Result: numbers = [10, 20, 30, 40, 50], target = 30
+```
+
+### `includes` Method
+
+**Functionality:**
+The `includes` method checks whether an array includes a certain element and returns a boolean value.
+
+**Parameters:**
+The `includes` method takes the element to search for as its parameter.
+
+**Return Value:**
+It returns `true` if the element is found, otherwise `false`.
+
+**Changes Original Array:**
+No, the original array remains unchanged when using the `includes` method.
+
+**Example:**
+
+```
+const fruits = ["apple", "banana", "cherry"];
+const hasBanana = fruits.includes("banana");
+// Result: hasBanana = true
+```
+
+### `indexOf` Method
+
+**Functionality:**
+The `indexOf` method searches for an element in an array and returns the first index at which the element is found.
+
+**Parameters:**
+The `indexOf` method takes the element to search for as its parameter.
+
+**Return Value:**
+It returns the index of the element if found, otherwise it returns -1.
+
+**Changes Original Array:**
+No, the original array remains unchanged when using the `indexOf` method.
+
+**Example:**
+
+```
+const fruits = ["apple", "banana", "cherry"];
+const bananaIndex = fruits.indexOf("banana");
+// Result: bananaIndex = 1
+```
+
 ## Method Loops
 
 ### `map` Method
