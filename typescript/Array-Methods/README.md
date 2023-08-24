@@ -15,7 +15,7 @@ Yes, the original array is modified by adding elements to the end.
 
 **Example:**
 
-` const numbers = [1, 2, 3];
+    `  const numbers = [1, 2, 3];
 
     const returnedValue = numbers.push(4, 5);
 
@@ -37,7 +37,7 @@ Yes, the original array is modified by removing the last element.
 
     ` const numbers = [1, 2, 3];
 
-    const removedElement = numbers.pop();
+      const removedElement = numbers.pop();
 
     // Result: numbers = [1, 2], removedElement = 3
     `
@@ -52,6 +52,15 @@ It returns the removed element.
 
 **Changes Original Array:**
 Yes, the original array is modified by removing the first element.
+**Example:**
+
+    `const fruits = ["apple", "banana", "cherry"];
+
+    const removedFruit = fruits.shift();
+
+    // Result: fruits = ["banana", "cherry"], removedFruit = "apple"
+
+`
 
 ### `unshift` Method
 
