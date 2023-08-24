@@ -16,6 +16,6 @@ Built-in functions are the functions that are pre-defined by the language develo
 
 User-defined functions are functions that programmers create themselves to perform specific tasks or operations. These functions are written by the developer according to their requirements. User-defined functions allow developers to modularize their code, make it more organized, and promote reusability. These functions are not part of the language's core features but are created by the programmer based on the needs of their application. For Example:
 
-       function calculateArea(radius) {
+       function calculateArea(radius:number) {
          return Math.PI * radius * radius;
         }
