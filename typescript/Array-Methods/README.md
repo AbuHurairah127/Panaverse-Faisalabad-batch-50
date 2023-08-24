@@ -13,6 +13,13 @@ It returns the new length of the array after adding the elements.
 **Changes Original Array:**
 Yes, the original array is modified by adding elements to the end.
 
+**Example:**
+
+```typescript
+const numbers = [1, 2, 3];
+const returnedValue = numbers.push(4, 5);
+// Result: numbers = [1, 2, 3, 4, 5], returnedValue = 5
+
 ### `pop` Method
 
 **Functionality:**
@@ -56,3 +63,4 @@ It returns an array containing the removed elements, or an empty array if no ele
 
 **Changes Original Array:**
 Yes, the original array can be modified by adding or removing elements.
+```
