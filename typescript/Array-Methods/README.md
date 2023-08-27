@@ -287,7 +287,11 @@ No, the original array remains unchanged when using the filter method.
 
 ```
 const numbers = [1, 2, 3, 4, 5];
-const evenNumbers = numbers.filter(num => num % 2 === 0);
+const evenNumbers = numbers.filter(num => {
+    if(num%2===0){
+        return true
+    }
+});
 // Result: numbers = [1, 2, 3, 4, 5], evenNumbers = [2, 4]
 ```
 
