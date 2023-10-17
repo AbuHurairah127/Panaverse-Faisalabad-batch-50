@@ -1,0 +1,9 @@
+p {
+  background-color: black;
+  color: red;
+}
+
+.text-center {
+  /* background-color: white; */
+  text-align: center;
+}
