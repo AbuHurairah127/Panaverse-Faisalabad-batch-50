@@ -16,7 +16,8 @@ export type studentType = {
 export type contactTypes = {
         name: string,
         email:string,
-        phone:number
+        phone:number,
+        message:string
 
 }
 

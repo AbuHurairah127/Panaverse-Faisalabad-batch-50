@@ -1,10 +1,31 @@
 import { contactTypes } from "@/types/commonTypes";
 
-export default function DisplayContact(props:{contactData:contactTypes}) {
+export default function DisplayContact(props: { contactData: contactTypes[] }) {
   return (
     <div>
-        <h1>Name: {props.contactData.name}</h1>
-        <h1>email: {props.contactData.phone}</h1>
+
+      <div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+          </tr>
+          {props.contactData.map((item, index) => {
+            return (
+              <tr  key={index}>
+                <td>{item.name}</td>
+                <td>{item.email}</td>
+                <td>{item.phone}</td>
+                <td>{item.message}</td>
+              </tr>
+            )
+          })}
+
+        </table>
+      </div>
+
     </div>
   )
 }
