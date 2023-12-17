@@ -1,0 +1,19 @@
+[{
+    "id":1,
+    "name":"naveed",
+    "email":"naveed@techloset.com",
+    "phone":234234234
+},
+{
+    "id":2,
+    "name":"Ali",
+    "email":"Ali@techloset.com",
+    "phone":234234234
+},
+{
+    "id":3,
+    "name":"umar",
+    "email":"umar@techloset.com",
+    "phone":234234234
+}
+]

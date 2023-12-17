@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@types/inquirer": "^9.0.3",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.1",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.10"
+  },
+  "name": "class09",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}

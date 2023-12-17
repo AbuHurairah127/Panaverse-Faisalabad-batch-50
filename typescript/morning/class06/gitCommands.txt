@@ -1,0 +1,14 @@
+Once time in each laptop
+step1: Git software download (https://git-scm.com/download/win)
+step2: Open new or exiting folder cmd / terminal 
+step3: > git config --global user.name "naveedtrainer"
+step4: > git config --global user.email "naveed@techloset.com"
+
+Every new project
+step5: > git init
+step6: > git remote add origin https://github.com/naveedtrainer/class-05 
+
+Every New changes - repeat
+step7: > git add -A
+step8: > git commit -m "while loop added"
+step9: > git push origin master
