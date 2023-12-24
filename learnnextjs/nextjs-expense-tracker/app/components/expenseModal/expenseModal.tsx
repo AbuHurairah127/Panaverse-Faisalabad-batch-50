@@ -5,13 +5,11 @@ import React, { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 const ExpenseModal = ({ isOpen, onClose, onAddExpense,onUpdateExpense, expense }: ExpenseModalProps) => {
-    console.log("expense", expense);
-
     const [amount, setAmount] = useState<number>(0);
     const [category, setCategory] = useState<string>('');
     const [note, setNote] = useState<string>('');
     const [date, setDate] = useState<string>('');
-
+   
     const categories = ['Groceries', 'Rent', 'Utilities', 'Entertainment', 'Online Purchases', 'Other']; // Add your own categories
 
 
@@ -52,13 +50,13 @@ const ExpenseModal = ({ isOpen, onClose, onAddExpense,onUpdateExpense, expense }
 
     return (
         <div className={`modal ${isOpen ? 'block' : 'hidden'}`}>
-            <div className="modal-overlay absolute w-full h-full bg-gray-800">
+            <div className="modal-overlay absolute top-0 left-0 w-full h-full bg-gray-800 bg-opacity-80">
                 <div className="modal-container bg-white w-96 mx-auto mt-20 p-6 rounded shadow-lg">
                     <div className="mb-4">
-                        <div className='flex flex-direction-row'>
+                        <div className='flex justify-between'>
                             <h3 className="text-2xl font-semibold mb-2">Add Expense</h3>
-                            <button style={{ marginLeft: 30 }} onClick={onClose}>
-                                <FaTimes className="text-red-500 hover:text-gray-700 cursor-pointer " />
+                            <button onClick={onClose}>
+                                <FaTimes className="text-3xl text-red-500 hover:text-gray-700 cursor-pointer" />
                             </button>
                         </div>
 
@@ -77,6 +75,9 @@ const ExpenseModal = ({ isOpen, onClose, onAddExpense,onUpdateExpense, expense }
                         <label className="block text-gray-600 text-sm mb-2" htmlFor="category">
                             Category
                         </label>
+                        
+                        
+
                         <select
                             id="category"
                             value={category || expense.category}

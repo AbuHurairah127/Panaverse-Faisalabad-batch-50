@@ -1,8 +1,11 @@
-// ExpenseList.js
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { BiCommentEdit } from "react-icons/bi";
+import { MdDeleteForever } from "react-icons/md";
+import { MdAddChart } from "react-icons/md";
 import { ExpenseType } from '@/types/commonTypes';
 import ExpenseModal from '../expenseModal/expenseModal';
+
 
 const ExpenseList = () => {
   const [expenses, setExpenses] = useState<ExpenseType[]>([]);
@@ -22,6 +25,13 @@ const ExpenseList = () => {
   }
   const onClose = () => {
     setIsOpen(false);
+    setExpense({
+      id: '',
+      amount: 0,
+      category: '',
+      note: '',
+      date: ''
+    })
   }
 
   const onUpdateExpense = (expenseRecord: ExpenseType) => {
@@ -38,7 +48,9 @@ const ExpenseList = () => {
 
 
   const onDeleteHandler = (expense: ExpenseType) => {
-    setExpenses(expenses.filter((e) => e.id !== expense.id));
+     
+    const filterdExpenses:ExpenseType[] = expenses.filter((e) => e.id !== expense.id)
+    setExpenses(filterdExpenses);
     setTotal(total - expense.amount);
   }
 
@@ -47,10 +59,15 @@ const ExpenseList = () => {
     setIsOpen(true);
   }
   return (
-    <div className="mt-8">
-      <h2 className="text-2xl font-semibold mb-4">Expense List</h2>
-      <div onClick={() => setIsOpen(true)}>Add Expense</div>
+    <div className="m-8">
+      <div className='flex justify-between'>
+        <h2 className="text-2xl font-semibold mb-4">Expense List</h2>
+        <button className="flex justify-center items-center mb-2 bg-green-500 rounded p-1" onClick={() => setIsOpen(true)}><MdAddChart />
+          Add Expense</button>
+      </div>
+
       <ExpenseModal expense={expense} isOpen={isOpen} onClose={onClose} onAddExpense={onAddExpense} onUpdateExpense={onUpdateExpense} />
+
       <table className="min-w-full bg-white border border-gray-300">
         <thead>
           <tr>
@@ -66,21 +83,21 @@ const ExpenseList = () => {
           {
             expenses.length > 0 ?
               expenses.map((expense) => (
-                <tr key={expense.id} className="hover:bg-gray-50">
+                <tr key={expense.id} className="hover:bg-gray-50 text-center">
                   <td className="py-2 px-4 border-b">{expense.id}</td>
                   <td className="py-2 px-4 border-b">PKR{expense.amount.toFixed(2)}</td>
                   <td className="py-2 px-4 border-b">{expense.category}</td>
                   <td className="py-2 px-4 border-b">{expense.note}</td>
                   <td className="py-2 px-4 border-b">{new Date(expense.date).toLocaleDateString()}</td>
-                  <td className="py-2 px-4 border-b">
-                    <button onClick={() => onEditHandler(expense)} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Edit</button>
-                    <button onClick={() => onDeleteHandler(expense)} className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                  <td className="flex justify-center py-2 px-4 border-b">
+                    <button onClick={() => onEditHandler(expense)} className="flex mr-1 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"> <BiCommentEdit className="mt-1" />Edit</button>
+                    <button onClick={() => onDeleteHandler(expense)} className="flex ml-1 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"><MdDeleteForever className="mt-1" /> Delete</button>
                   </td>
                 </tr>
               ))
 
               : <tr>
-                <td>No Expense Fouund!</td>
+                <td colSpan={6} className="text-center">No Expense Found!</td>
               </tr>
 
           }
