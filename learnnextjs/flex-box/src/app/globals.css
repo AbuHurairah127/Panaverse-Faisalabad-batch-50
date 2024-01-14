@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    font-size: 36px !important;
+    @apply text-[#fff];
+  }
+}
+@layer components {
+  .container1 {
+    @apply w-96 aspect-square border;
+  }
+}
+@layer utilities {
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
