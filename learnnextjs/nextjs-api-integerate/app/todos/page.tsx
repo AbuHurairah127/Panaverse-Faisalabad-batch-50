@@ -5,12 +5,10 @@ export default function Todos() {
     const [todos, setTodos] = useState([])
     const [file, setFile] = useState({})
     const [loader, setLoader] = useState(false)
-    const [update, setUpdate] = useState(false)
     
     useEffect(()=>{
-      alert("Todos")
       getTodos()
-    },[update])
+    },[])
     
 
     const getTodos = async ()=>{
@@ -26,13 +24,11 @@ export default function Todos() {
           setLoader(false)
          }
     }
-const reFetch = ()=>{
-  setUpdate(true)
-}
+
 
   return (
     <div>
-        <button className="bg-red-500" onClick={reFetch}>get todos</button>
+        {/* <button className="bg-red-500" onClick={getTodos}>get todos</button> */}
         {loader && "loading..."}
         {todos.map((todo)=>{
             return <div>
