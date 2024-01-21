@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^1.6.5",
+    "contentful": "^10.6.16",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
