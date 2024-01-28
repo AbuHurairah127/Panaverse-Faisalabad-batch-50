@@ -1,23 +1,44 @@
-// var num:number = 10;
-// let userName:string = Naveed Sarwar
-// let isCompleted:boolean = false;
-// let isNull:null = null;
-// let isUndefined:undefined= undefined
-// let isVoid:void = undefined
+var num: number = 10;
+let userName: string = "Naveed Sarwar"
+let isCompleted: boolean = false;
+let isNull: null = null;
+let isUndefined: undefined = undefined
+let isVoid: void = undefined
 
-// let isAny: any = anything
-// isAny = 12;
-// isAny = false
+let isAny: any = "anything"
+isAny = 12;
+isAny = false
 
-// let isUnknown:unknown = string
-// isUnknown = false
-// // console.log(isUnknown,isUnknown);
+let isUnknown: unknown = "sf"
+isUnknown = false
+// console.log(isUnknown,isUnknown);
 
-// function returnError():never {
-//   throw new Error(Any error);
+function calculateSum(num1: number, num2: number): number {
+    return num1 + num2
+}
 
-// }
+function printConsole(): never {
+    console.log("Print console");
+    throw new Error("any error")
+}
+let output: void = printConsole()
 
+function returnError(): never {
+    throw new Error("Any error");
+}
+type carType = {
+    company: string,
+   
+}
+type companyType = {
+    modal: string
+}
+type finalType = companyType | carType
+let newCar: finalType = {
+    company: "Honda",
+}
+type userTypeA = boolean | string
+var userType: userTypeA = "Admin"
 // let student:object = {
 //   name: Naveed,
 //   email:naveed@techloset.com,
@@ -88,26 +109,26 @@
 //   width:234
 // }
 
-// // contact page
-// // type ContactForm1 = {
-// //   name: string, 
-// //   email: string, 
-// //   budget: number,
-// //   message:string | null
-// // }
+// contact page
+// type ContactForm1 = {
+//   name: string, 
+//   email: string, 
+//   budget: number,
+//   message:string | null
+// }
 
-// // // about page
-// // type ContactForm2 = {
-// //   subject: string,
-// // }
+// // about page
+// type ContactForm2 = {
+//   subject: string,
+// }
 
-// // let newContact:ContactForm1 & ContactForm2 = {
-// //   name: Naveed,
-// //   email:naveed@techloset.com,
-// //   budget: 2342,
-// //   message: null
-// // }
-// // newContact.message
+// let newContact:ContactForm1 & ContactForm2 = {
+//   name: Naveed,
+//   email:naveed@techloset.com,
+//   budget: 2342,
+//   message: null
+// }
+// newContact.message
 
 
 // // ## Enum
@@ -206,68 +227,68 @@
 // }
 
 
-interface ProductInterface {
-  id: number
-  title: string,
-  description: string,
-  price: number,
-  discountPercentage: number,
-  rating: number,
-  stock: number,
-  brand: string,
-  category: string,
-  thumbnail: string,
-  images: string[]
-}
+// interface ProductInterface {
+//   id: number
+//   title: string,
+//   description: string,
+//   price: number,
+//   discountPercentage: number,
+//   rating: number,
+//   stock: number,
+//   brand: string,
+//   category: string,
+//   thumbnail: string,
+//   images: string[]
+// }
 
-interface DataInterface {
-  products: ProductInterface[],
-  total: number,
-  skip: number,
-  limit: number
-}
-
-
-let data:DataInterface = {
-  products: [
-    {
-      id: 1,
-      title: "iPhone 9",
-      description: "An apple mobile which is nothing like apple",
-      price: 549,
-      discountPercentage: 12.96,
-      rating: 4.69,
-      stock: 94,
-      brand: "Apple",
-      category:" smartphones",
-      thumbnail:" ...",
-      images: ["...", "..."," ..."]
-    },
-    // 30 items
-  ],
-
-  total: 100,
-  skip: 0,
-  limit: 30
-}
-
-const myFunc = <T> (arr:T[]): T[]=>{
-return arr
-}
+// interface DataInterface {
+//   products: ProductInterface[],
+//   total: number,
+//   skip: number,
+//   limit: number
+// }
 
 
+// let data:DataInterface = {
+//   products: [
+//     {
+//       id: 1,
+//       title: "iPhone 9",
+//       description: "An apple mobile which is nothing like apple",
+//       price: 549,
+//       discountPercentage: 12.96,
+//       rating: 4.69,
+//       stock: 94,
+//       brand: "Apple",
+//       category:" smartphones",
+//       thumbnail:" ...",
+//       images: ["...", "..."," ..."]
+//     },
+//     // 30 items
+//   ],
 
-let todods = {
-  "todos": [
-    {
-      "id": 1,
-      "todo": "Do something nice for someone I care about",
-      "completed": true,
-      "userId": 26
-    },
-    // 30 items
-  ],
-  "total": 150,
-  "skip": 0,
-  "limit": 30
-}
+//   total: 100,
+//   skip: 0,
+//   limit: 30
+// }
+
+// const myFunc = <T> (arr:T[]): T[]=>{
+// return arr
+// }
+
+
+
+// let todods = {
+//   "todos": [
+//     {
+//       "id": 1,
+//       "todo": "Do something nice for someone I care about",
+//       "completed": true,
+//       "userId": 26
+//     },
+//     // 30 items
+//   ],
+//   "total": 150,
+//   "skip": 0,
+//   "limit": 30
+// }
