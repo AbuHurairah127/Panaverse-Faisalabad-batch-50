@@ -1,11 +1,10 @@
-### Object orinted programming
+# Object orinted programming
 <!-- Classes, Function overloading, function overiding -->
-## four pillar of oop
-# Inheritance
-# Encapsulation
-# Abstraction
-# Polymorphism
-
+## Four pillar of oop
+- Inheritance
+- Encapsulation
+- Abstraction
+- Polymorphism
 
 
 ## Multiple inhertance:
